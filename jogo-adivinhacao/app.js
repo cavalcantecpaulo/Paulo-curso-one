@@ -1,6 +1,6 @@
 let listaDeNumerosAleatorios = [];
 let qtdElementosLista = listaDeNumerosAleatorios.length;
-let numElementos = 10;
+let numElementos = 100;
 let numeroSecreto = gerarNumero();
 let tentativas=1;
 
@@ -15,7 +15,7 @@ function exibirTexto(tag, texto){
 
 function telaInicial(){
     exibirTexto("h1", "Jogo do número secreto");
-    exibirTexto("p", "Digite um número de 1 a 10:");
+    exibirTexto("p", "Digite um número de 1 a 100:");
 }
 
 function gerarNumero(){
