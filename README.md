@@ -1,7 +1,7 @@
 # Paulo-curso-one
-Repositório para o curso Oracle pela plataforma Alura.
+Repositório criado para mostrar o que desenvolvi no curso da Oracle pela plataforma Alura.
 
-## Estrutura do Repositório
+## Repositório
 
-- **jogo-adivinhacao**: Contém os arquivos do jogo de adivinhação já publicado no Vercel.
+- **jogo-adivinhacao**: Contém os arquivos do jogo de adivinhação de número secreto publicado no Vercel.
 - **EM DESENVOLVIMENTO...**
