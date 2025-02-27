@@ -21,18 +21,19 @@ function adicionarAmigo(){
 }
 function atualizarLista(){
     let array;
-    let i;
-    let li;
-    array = document.getElementsByClassName("name-list");
+    array = document.getElementById("listaAmigos");
     array.innerHTML = "";
-    for(i=0;i<listaAmigos.length; i++){
-        li = document.createElement("li");
-    }
+    for(let i=0;i<listaAmigos.length; i++){
+        let elementoLista = document.createElement("li");
+        elementoLista.textContent = listaAmigos[i];
+    }   
 }
 function sortearAmigo(){
     let numeroElementos = listaAmigos.length;
     let indiceAleatorio = parseInt(Math.random() * numeroElementos);
-    console.log("Amigo sorteado: ", listaAmigos[indiceAleatorio]);
+    if(numeroElementos>0){
+        console.log("Amigo sorteado: ", listaAmigos[indiceAleatorio]);
+    }
 }
 
 function limparInput(){
