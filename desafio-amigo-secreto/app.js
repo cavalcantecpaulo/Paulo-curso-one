@@ -2,43 +2,58 @@
 
 let listaAmigos = [];
 
-function telaDoJogo(){
-    console.log("Jogo Inicializado");
-}
-function adicionarAmigo(){
+    function adicionarAmigo() {
     let amigo = document.querySelector("input").value;
 
-    if(amigo == ""){
-    alert('Por favor, insira um nome.');
-    return;
-}
-    
+    //caso nome esteja vazio
+    if (amigo == "") {
+        alert("Por favor, insira um nome.");
+        return;
+    }
+    //caso nome já tenha sido digitado
+    if (listaAmigos.includes(amigo)) {
+        alert("Esse nome já foi digitado, insira outro nome.");
+        limparInput();
+        return;
+    }
+
     listaAmigos.push(amigo);
-    console.log("Nome digitado:", amigo);
-    console.log("Amigos: ", listaAmigos);
     atualizarLista();
     limparInput();
-}
-function atualizarLista(){
+    }
+    function atualizarLista() {
     let array;
     array = document.getElementById("listaAmigos");
     array.innerHTML = "";
-    for(let i=0;i<listaAmigos.length; i++){
+    for (let i = 0; i < listaAmigos.length; i++) {
         let elementoLista = document.createElement("li");
         elementoLista.textContent = listaAmigos[i];
-    }   
-}
-function sortearAmigo(){
-    let numeroElementos = listaAmigos.length;
-    let indiceAleatorio = parseInt(Math.random() * numeroElementos);
-    if(numeroElementos>0){
-        console.log("Amigo sorteado: ", listaAmigos[indiceAleatorio]);
+        array.appendChild(elementoLista);
     }
 }
+    function sortearAmigo() {
+    let numeroElementos = listaAmigos.length;
+    let indiceAleatorio = parseInt(Math.random() * numeroElementos);
+    let amigoSorteado = listaAmigos[indiceAleatorio];
 
-function limparInput(){
+    if (numeroElementos > 0) {
+        mostrarResultado(amigoSorteado);
+    }
+    else{
+        alert("Não há ninguém para ser sorteado!");
+    }
+}
+    function mostrarResultado(amigoSorteado){
+        let sorteado;
+        sorteado = document.getElementById("resultado");
+        sorteado.innerHTML = "";
+        let elementoSorteado = document.createElement("li");
+        elementoSorteado.textContent = `O amigo secreto sorteado foi: ${amigoSorteado}`;
+        
+        sorteado.appendChild(elementoSorteado);
+    }
+    function limparInput() {
     let amigo;
     amigo = document.querySelector("input");
     amigo.value = "";
-}
-telaDoJogo();
+    }

@@ -1,10 +1,10 @@
 :root {
-    --color-primary: #148ed4;
+    --color-primary: #03a8f5fd;
     --color-secondary: #141414;
     --color-tertiary: #a8a7a7;
     --color-button: #19c527ce;
     --color-button-hover: #075a10a8;
-    --color-text: #444444;
+    --color-text: #ffffff;
     --color-white: #FFFFFF;
 }
 
@@ -54,10 +54,9 @@ body {
 
 /* Títulos */
 .main-title {
-    font-size: 48px;
-    font-family: "Merriweather", serif;
+    font-size: 80px;
+    font-family: "century gothic", serif;
     font-weight: 900;
-    font-style: italic;
     color: var(--color-white);
 }
 
