@@ -1,0 +1,24 @@
+{
+  "name": "desafio-amigo-secreto",
+  "version": "1.0.0",
+  "description": "\"O Challenge Amigo Secreto é um desafio de prática de lógica de programação do programa Oracle Next Education que estou acompanhando pela plataforma Alura.\"",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cavalcantecpaulo/Paulo-curso-one.git"
+  },
+  "author": "Paulo Cavalcante Caroba <pauloc1807@hotmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cavalcantecpaulo/Paulo-curso-one/issues"
+  },
+  "homepage": "https://github.com/cavalcantecpaulo/Paulo-curso-one#readme",
+  "keywords": [],
+  "dependencies": {
+    "open": "^10.1.0"
+  }
+}
+
