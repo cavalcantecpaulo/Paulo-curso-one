@@ -21,11 +21,7 @@ O Challenge Amigo Secreto é um desafio de prática de lógica de programação 
 <img src="./assets/programaRodou.png"/>
 
 ## Tecnologias Utilizadas 
-<img src="./assets/htmlLogo.svg" width="70"/>
-<img src="./assets/csslogo.svg" width="70"/>
-<img src="./assets/jslogo.svg" width="70"/>
-<img src="./assets/githublogo.svg" width="70"/>
-<img src="./assets/vercellogo.svg" width="70"/>
+<img src="./assets/htmlLogo.svg" width="70"/> <img src="./assets/csslogo.svg" width="70"/> <img src="./assets/jslogo.svg" width="70"/> <img src="./assets/githublogo.svg" width="70"/> <img src="./assets/vercellogo.svg" width="70"/>
 
 ## Autores
 - **Paulo Cavalcante Caroba** - Desenvolvedor principal. [Meu Linkedin](https://www.linkedin.com/in/paulocavalcantec/)
