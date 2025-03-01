@@ -31,6 +31,3 @@ O Challenge Amigo Secreto é um desafio de prática de lógica de programação 
 
 - Agradeço ao programa Oracle Next Education (ONE) e à plataforma Alura pela oportunidade de aprender;
 - Agradeço também à comunidade de desenvolvedores do fórum Alura por todo o suporte e conhecimento compartilhado.
-
-## Licença
-Este projeto está licenciado sob a Licença ISC.
