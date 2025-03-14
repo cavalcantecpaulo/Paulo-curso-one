@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+
+* {
+    margin:0;
+    padding: 0;
+}
+body{
+    box-sizing: border-box;
+    background-color: #000000;
+    color: #ffffff;
+}
+.cabecalho{
+    padding: 2% 0 0 15%;
+    font-size: 24px;
+}
+.cabecalho-menu{
+    display: flex;
+    gap: 80px;
+}
+.cabecalho-links{
+    color: #ffff33;
+    text-decoration: none;
+    font-family: "Poppins";
+}
+.conteudo{
+    margin: 5% 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.conteudo-texto{
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.conteudo-texto-titulo{
+    font-family: "Poppins";
+    font-size: 42px;
+}
+.titulo-destaque{
+    color: #ffff33;
+}
+.conteudo-texto-paragrafo{
+    font-family: "Afacad Flux";
+    font-size: 26px;
+}
+.fotoinicial{
+    width: 550px;
+}
+.conteudo-links{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+.conteudo-links-subtitulo{
+    font-family: "Afacad Flux";
+    font-size: 28px;
+}
+.conteudo-links-link{
+    display: flex;
+    justify-content: center;
+    color:#ffff33;
+    width: 250px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 16px;
+    font-size: 24px;
+    font-family: "Poppins";
+    font-weight: 600;
+    padding: 20px 0;
+    border: 2px solid #ffff33;
+    gap: 12px;
+}
+.conteudo-links-link:hover {
+    background-color: #3e3b45;
+    color: white;
+    width: 280px;
+    font-size: 26px;
+  }
+  .titulos-abas{
+    color:#0AEE43;
+    font-family: "Poppins";
+    font-size: 28px;
+  }
+  .lista-exibicao{
+    font-family: "Poppins";
+    font-size: 20px;
+  }
+  .curriculo-destaque{
+    color: #0BEBD4;
+  }
+   .foto-aboutme{
+    width: 400px;
+   }
+  .rodape{
+    color: #ffff33;
+    text-align: center;
+    font-size: 22px;
+    font-family: "Afacad Flux";
+    font-weight: 400;
+    padding: 40px;
+  }
