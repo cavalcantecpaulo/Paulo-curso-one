@@ -5,49 +5,60 @@
     margin:0;
     padding: 0;
 }
+:root {
+    --cor-escura-fundo:#222831;
+    --cor-amarela:#ffff33;
+    --cor-azul:#2772db;
+    --cor-azul-claro:#0fc9e7;
+    --cor-quinta:#ffffff;
+    --cor-hover:#3a4750;
+    --fonte-principal:"Poppins";
+    --fonte-secundaria:"Afacad Flux";
+}
 body{
     box-sizing: border-box;
-    background-color: #000000;
-    color: #ffffff;
+    background-color: var(--cor-escura-fundo);
+    color: var(--cor-quinta);
 }
 .cabecalho{
     padding: 2% 0 0 15%;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 .cabecalho-menu{
     display: flex;
     gap: 80px;
 }
 .cabecalho-links{
-    color: #ffff33;
+    color: var(--cor-amarela);
     text-decoration: none;
-    font-family: "Poppins";
+    font-family: var(--fonte-principal);
 }
 .conteudo{
     margin: 5% 15%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap:82px;
 }
 .conteudo-texto{
-    width: 700px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 .conteudo-texto-titulo{
-    font-family: "Poppins";
-    font-size: 42px;
+    font-family: var(--fonte-principal);
+    font-size: 2.62rem;
 }
 .titulo-destaque{
-    color: #ffff33;
+    color: var(--cor-amarela);
 }
 .conteudo-texto-paragrafo{
-    font-family: "Afacad Flux";
-    font-size: 26px;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.625rem;
 }
-.fotoinicial{
-    width: 550px;
+.minhafoto{
+    width: 40%;
 }
 .conteudo-links{
     display: flex;
@@ -57,50 +68,65 @@ body{
     gap: 32px;
 }
 .conteudo-links-subtitulo{
-    font-family: "Afacad Flux";
-    font-size: 28px;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.75rem;
 }
-.conteudo-links-link{
+.conteudo-links-redes{
     display: flex;
     justify-content: center;
-    color:#ffff33;
-    width: 250px;
+    color:var(--cor-amarela);
+    width: 15.625rem;
     text-align: center;
     text-decoration: none;
     border-radius: 16px;
-    font-size: 24px;
-    font-family: "Poppins";
+    font-size: 1.5rem;
+    font-family: var(--fonte-principal);
     font-weight: 600;
     padding: 20px 0;
-    border: 2px solid #ffff33;
+    border: 2px solid var(--cor-amarela);
     gap: 12px;
 }
-.conteudo-links-link:hover {
-    background-color: #3e3b45;
-    color: white;
+.conteudo-links-redes:hover {
+    background-color:var(--cor-hover) ;
+    color: var(--cor-quinta);
     width: 280px;
-    font-size: 26px;
+    font-size: 1.62rem;
   }
   .titulos-abas{
-    color:#0AEE43;
-    font-family: "Poppins";
-    font-size: 28px;
+    color:var(--cor-azul);
+    font-family: var(--fonte-principal);
+    font-size: 1.75rem ;
   }
   .lista-exibicao{
-    font-family: "Poppins";
-    font-size: 20px;
+    font-family: var(--fonte-principal);
+    font-size: 1.25rem;
   }
   .curriculo-destaque{
-    color: #0BEBD4;
+    color: var(--cor-azul-claro);
   }
-   .foto-aboutme{
-    width: 400px;
-   }
   .rodape{
-    color: #ffff33;
+    color: var(--cor-amarela);
     text-align: center;
-    font-size: 22px;
-    font-family: "Afacad Flux";
+    font-size: 1.37rem;
+    font-family: var(--fonte-secundaria);
     font-weight: 400;
-    padding: 40px;
+    padding: 8%;
+  }
+  @media(max-width:1200px){
+    .conteudo{
+        flex-direction:column-reverse; 
+    }
+    .cabecalho{
+        padding:10%;
+    }
+    .cabecalho-menu{
+        justify-content: center;
+    }
+    .conteudo{
+        margin:5% 5%;
+    }
+    .conteudo-texto{
+        width: auto;
+        align-items: center;
+    }
   }
