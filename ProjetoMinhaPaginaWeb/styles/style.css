@@ -56,6 +56,12 @@ body{
     font-family: var(--fonte-principal);
     font-size: 2.62rem;
 }
+.conteudo-texto-titulo-projetos{
+    font-family: var(--fonte-principal);
+    font-size: 2.62rem;
+    color: var(--cor-azul-claro);
+    padding: 10% 0 1%;
+}
 .titulo-destaque{
     color: var(--cor-amarela);
 }
@@ -66,7 +72,7 @@ body{
 .conteudo-texto-paragrafo-projetos{
     font-family: var(--fonte-secundaria);
     font-size: 1.625rem;
-    padding :1% 0% 10% 0px;
+    padding :1% 0% 3% 0px;
 }
 .minhafoto{
     width: 40%;
@@ -115,7 +121,7 @@ body{
     font-weight: 600;
     padding: 20px 0;
     border: 2px solid var(--cor-amarela);
-    gap: 12px;
+    gap: 10% 0 10%;
 }
 .conteudo-links-redes:hover {
     background-color:var(--cor-hover) ;
@@ -135,13 +141,18 @@ body{
   .curriculo-destaque{
     color: var(--cor-azul-claro);
   }
+  .nome-destacado{
+    font-weight: 700;
+    font-style: normal;
+  }
   .rodape{
     color: var(--cor-amarela);
     text-align: center;
     font-size: 1.37rem;
     font-family: var(--fonte-secundaria);
     font-weight: 400;
-    padding: 8%;
+    padding: 3%;
+    font-style: italic;
   }
   @media(max-width:1200px){
     .conteudo{
@@ -152,6 +163,7 @@ body{
     }
     .cabecalho-menu{
         justify-content: center;
+        gap: 15%;
     }
     .conteudo{
         margin:5% 5%;
