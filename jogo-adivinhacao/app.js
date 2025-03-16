@@ -38,7 +38,7 @@ function verificarChute(){
     console.log("O botão 'chute' foi clicado!!!");
 
     if(chute == numeroSecreto){
-        exibirTexto("h1", "Parabéns, descobriu o número secreto!");
+        exibirTexto("h1", "Parabéns, você descobriu o número secreto!");
         let palavraTentativa = tentativas == 1 ? "tentativa" : "tentativas";
         let msgTentativa = (`Você descobriu o número (${numeroSecreto}) com ${tentativas} ${palavraTentativa}!`);
         exibirTexto('p', msgTentativa);
