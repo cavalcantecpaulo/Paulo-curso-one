@@ -37,7 +37,7 @@ body::before {
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
-    border-radius: 48px;
+    border-radius: 50px;
     border: 1px solid #fcfcfc;
     box-shadow: 4px 4px 20px 0px rgba(0, 1, 2, 0.15);
     background-image: url("img/Ruido.png");
@@ -53,8 +53,8 @@ body::before {
     align-items: center;
     justify-content: space-between;
     bottom: 0;
-    padding: 9% 0% 15% 5%;
-    gap: 1%;
+    padding: 9% 5% 8% 4%;
+    gap: 10%;
 }
 
 .container__informacoes {
