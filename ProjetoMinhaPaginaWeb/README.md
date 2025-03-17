@@ -58,10 +58,13 @@ Curso Oracle\ProjetoMinhaPaginaWeb\
 |   ├── instagram.png
 │   ├── github.png
 │   ├── paulo11tst.png
-|   ├── paulofoto2.png
-|   ├── paulofoto33.png
+|   ├── paulo4.png
 |   ├── telaProjeto.png
 |   ├── img-adivinhar.png
+|   ├── ronaldinhoTela1.png
+|   ├── ronaldinhoTela2.png
+|   ├── telaProjeto.png
+|   ├── telaJogoAdivinhar.png
 └── README.md
 ```
 - index.html: Página inicial com uma breve apresentação e links para redes sociais como o GitHub e Linkedin.

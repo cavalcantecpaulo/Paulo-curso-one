@@ -7,10 +7,11 @@
 }
 :root {
     --cor-escura-fundo:#121212   ;
-    --cor-amarela:#ffff33;
-    --cor-azul:#2772db;
+    --cor-primaria:#ffff33;
+    --cor-terciaria:#ff5722;
     --cor-azul-claro:#0fc9e7;
     --cor-quinta:#ffffff;
+    --cor-sextiaria:#fcff82;
     --cor-hover:#3a4750;
     --fonte-principal:"Poppins";
     --fonte-secundaria:"Afacad Flux";
@@ -29,7 +30,7 @@ body{
     gap: 80px;
 }
 .cabecalho-links{
-    color: var(--cor-amarela);
+    color: var(--cor-primaria);
     text-decoration: none;
     font-family: var(--fonte-principal);
 }
@@ -60,10 +61,10 @@ body{
     font-family: var(--fonte-principal);
     font-size: 2.62rem;
     color: var(--cor-azul-claro);
-    padding: 10% 0 1%;
+    margin-top: 5%;
 }
 .titulo-destaque{
-    color: var(--cor-amarela);
+    color: var(--cor-primaria);
 }
 .conteudo-texto-paragrafo{
     font-family: var(--fonte-secundaria);
@@ -75,7 +76,8 @@ body{
     padding :1% 0% 3% 0px;
 }
 .minhafoto{
-    width: 40%;
+    width: 30%;
+    border-radius: 16px;
 }
 .fotos-projetos{
     padding:1% 0 5%;
@@ -96,7 +98,7 @@ body{
 .conteudo-links-redes{
     display: flex;
     justify-content: center;
-    color:var(--cor-amarela);
+    color:var(--cor-primaria);
     width: 15.625rem;
     text-align: center;
     text-decoration: none;
@@ -105,13 +107,13 @@ body{
     font-family: var(--fonte-principal);
     font-weight: 600;
     padding: 20px 0;
-    border: 2px solid var(--cor-amarela);
+    border: 2px solid var(--cor-primaria);
     gap: 12px;
 }
 .conteudo-links-redes-projetos{
     display: flex;
     justify-content: center;
-    color:var(--cor-amarela);
+    color:var(--cor-primaria);
     width: 15.625rem;
     text-align: center;
     text-decoration: none;
@@ -120,7 +122,7 @@ body{
     font-family: var(--fonte-principal);
     font-weight: 600;
     padding: 20px 0;
-    border: 2px solid var(--cor-amarela);
+    border: 2px solid var(--cor-primaria);
     gap: 10% 0 10%;
 }
 .conteudo-links-redes:hover {
@@ -129,8 +131,14 @@ body{
     width: 280px;
     font-size: 1.62rem;
   }
+  .conteudo-links-redes-projetos:hover{
+    background-color:var(--cor-hover) ;
+    color: var(--cor-quinta);
+    width: 280px;
+    font-size: 1.62rem;
+  }
   .titulos-abas{
-    color:var(--cor-azul);
+    color:var(--cor-terciaria);
     font-family: var(--fonte-principal);
     font-size: 1.75rem ;
   }
@@ -139,14 +147,14 @@ body{
     font-size: 1.25rem;
   }
   .curriculo-destaque{
-    color: var(--cor-azul-claro);
+    color: var(--cor-sextiaria);
   }
   .nome-destacado{
     font-weight: 700;
     font-style: normal;
   }
   .rodape{
-    color: var(--cor-amarela);
+    color: var(--cor-primaria);
     text-align: center;
     font-size: 1.37rem;
     font-family: var(--fonte-secundaria);
@@ -156,7 +164,8 @@ body{
   }
   @media(max-width:1200px){
     .conteudo{
-        flex-direction:column-reverse; 
+        flex-direction:column-reverse;
+        margin:3% 5%;
     }
     .cabecalho{
         padding:10%;
@@ -165,11 +174,16 @@ body{
         justify-content: center;
         gap: 15%;
     }
-    .conteudo{
-        margin:5% 5%;
-    }
     .conteudo-texto{
         width: 95%;
-        align-items: center;
+    }
+    .titulos-abas{
+        text-align: center;
+    }
+    .minhafoto{
+        width: 70%;
+    }
+    .rodape{
+        margin-top: 15%;
     }
   }
