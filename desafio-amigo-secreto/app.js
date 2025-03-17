@@ -49,12 +49,15 @@ let listaAmigos = [];
         sorteado.innerHTML = "";
         let elementoSorteado = document.createElement("li");
         elementoSorteado.textContent = `O amigo secreto sorteado foi: ${amigoSorteado}`;
-        
         sorteado.appendChild(elementoSorteado);
+        document.getElementsByClassName("didicofoto")[0].src="/assets/didicorindo.jpg";
     }
     function limparInput() {
     let amigo;
     amigo = document.querySelector("input");
     amigo.value = "";
+    }
+    function novoJogo(){
+        location.reload();
     }
     

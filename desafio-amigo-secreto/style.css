@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 :root {
-    --color-primary: #03a8f5fd;
+    --color-primary: #142d4c;
     --color-secondary: #141414;
-    --color-tertiary: #a8a7a7;
+    --color-tertiary: #a7bcb9;
     --color-button: #19c527ce;
     --color-button-hover: #075a10a8;
     --color-text: #ffffff;
@@ -26,7 +28,7 @@ body {
 .main-content {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: 110%;
     width: 100%;
 }
 
@@ -36,14 +38,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px 0 0;
+    padding: 20px 0 0;
 }
-
+.didicofoto{
+    width: 20%;
+    margin-left: 10%;
+}
 /* Seção de entrada */
 .input-section {
     flex: 60%;
     background-color: var(--color-secondary);
-    border: 1px solid #000;
+    border: 1px solid #ffffff;
     border-radius: 64px 64px 0 0;
     display: flex;
     flex-direction: column;
@@ -54,17 +59,17 @@ body {
 
 /* Títulos */
 .main-title {
-    font-size: 80px;
-    font-family: "century gothic", serif;
-    font-weight: 900;
+    font-size: 90px;
+    font-family: "Bebas Neue";
+    font-weight: 400;
     color: var(--color-white);
 }
 
 .section-title {
-    font-family: "Inter", serif;
-    font-size: 36px;
+    font-family: "segoe ui", serif;
+    font-size: 46px;
     font-weight: 700;
-    color: var(--color-primary);
+    color: var(--color-text);
     margin: 10px 0;
     text-align: center;
 }
@@ -77,18 +82,18 @@ body {
     max-width: 600px;
     margin-top: 20px;
 }
-
 .input-name {
     width: 100%;
     padding: 10px;
     border: 2px solid #000;
     border-radius: 25px 0 0 25px;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .button-container {
-    width: 300px;
+    display: flex;
     justify-content: center;
+    gap: 10px;
 }
 
 /* Estilos de entrada de texto */
@@ -121,7 +126,7 @@ button {
 }
 
 .button-add:hover {
-    background-color: #a1a1a1;
+    background-color: #3e4a61;
 }
 
 /* Listas */
@@ -129,7 +134,7 @@ ul {
     list-style-type: none;
     color: var(--color-text);
     font-family: "Inter", sans-serif;
-    font-size: 18px;
+    font-size: 28px;
     margin: 20px 0;
 }
 
@@ -145,17 +150,62 @@ ul {
 .button-draw {
     display: flex;
     align-items: center;
-    width: 100%;
-    padding: 10px 40px;
+    width: auto;
+    padding: 15px 30px ;
     color: var(--color-white);
     background-color: var(--color-button);
-    font-size: 16px;
+    font-size: 22px;
+    font-weight: 500;
+    padding: 4%;
 }
 
 .button-draw img {
-    margin-right: 40px;
+    margin-right: 10px;
 }
 
 .button-draw:hover {
     background-color: var(--color-button-hover);
+    height: 100%;
+    width: 100%;
 }
+.rodape{
+    color: #FFFFFF;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    text-align: center;
+    width: 100%;
+    padding: 1%;
+}
+@media (max-width:1200px) {
+    * {
+        flex-direction: column;
+        text-align: center;
+    }
+    .didicofoto{
+        width: 50%;
+        margin: 10%;
+    }
+    .section-title{
+        font-size: 30px;
+    }
+    .main-title{
+        font-size: 60px;
+    }
+    .button-container{
+        align-items: center;
+    }
+    .button-draw{
+        font-size: 18px;
+        width: 95%;
+        flex-direction: row;
+        gap: 15px;
+    }
+    .input-wrapper{
+        flex-direction: row;
+        width: 90%;
+    }
+    ul{
+        font-size: 20px;
+    }
+} 

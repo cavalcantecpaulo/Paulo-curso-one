@@ -7,18 +7,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-    <title>Jogo Sorteio Amigo Secreto</title>
+    <title class= "titulo-jogo">Sorteio do Amigo Secreto</title>
 </head>
 
 <body>
     <main class="main-content">
         <header class="header-banner">
             <h1 class="main-title">Sortear Amigo Secreto</h1>
-            <img src="assets/neymar44.png" alt="ney" class="neymar">
+            <img src="assets/didico01.webp" alt="didico" class="didicofoto">
         </header>
         
         <section class="input-section">
-            <h2 class="section-title">Digite o nome dos amigos</h2>
+            <h2 class="section-title">Digite o nome dos envolvidos</h2>
             <div class="input-wrapper">
                 <input type="text" id="amigo" class="input-name" placeholder="Digite um nome">
                 <button class="button-add" onclick="adicionarAmigo()">Adicionar</button>
@@ -32,10 +32,15 @@
                     <img src="assets/play_circle_outline.png" alt="Ícone para sortear">
                     Sortear nome
                 </button>
+                    <button class="button-draw" onclick="novoJogo()" aria-label="Sortear amigo secreto">
+                        Novo Jogo
+                </button>
             </div>
         </section>
+        <footer class="rodape">
+            <p>2025 - Modified by Cavalcante</p>
+        </footer>
     </main>
-    
     <script src="app.js" defer></script>
 </body>
 </html>
