@@ -16,6 +16,7 @@ function exibirTexto(tag, texto){
 function telaInicial(){
     exibirTexto("h1", "Descubra o número secreto 🧐");
     exibirTexto("p", "Digite um número de 1 a 100:");
+    document.getElementsByClassName("container__imagem-pessoa")[0].src ="/img/ronaldinho.webp";
 }
 
 function gerarNumero(){

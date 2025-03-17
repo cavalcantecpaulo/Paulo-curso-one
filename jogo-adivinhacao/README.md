@@ -2,8 +2,6 @@
 
 [**Jogo Adivinhação - Veja neste Link**](https://joguinho-adivinhacao-num.vercel.app/) 
 
-![Foto do Site](/img/telaJogoAdivinhar.png)
-
 Este é um projeto simples de jogo de adivinhação, onde o objetivo é acertar um número secreto gerado aleatoriamente entre 1 e 100. O jogador tem a chance de tentar várias vezes, e o jogo dá feedback sobre o valor inserido (se é maior ou menor do que o número secreto). Após acertar, o jogador pode reiniciar o jogo.
 
 ### 📚 Sobre o Curso

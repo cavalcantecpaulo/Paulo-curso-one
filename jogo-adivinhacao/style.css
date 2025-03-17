@@ -47,13 +47,14 @@ body::before {
 
 .container__imagem-pessoa{
     border-radius: 16px;
+    width: 30%;
 }
 .container__conteudo {
     display: flex;
     align-items: center;
     justify-content: space-between;
     bottom: 0;
-    padding: 9% 5% 8% 4%;
+    padding: 15% 5% 14% 4%;
     gap: 10%;
 }
 
