@@ -14,7 +14,7 @@ function exibirTexto(tag, texto){
 }
 
 function telaInicial(){
-    exibirTexto("h1", "Jogo do número secreto");
+    exibirTexto("h1", "Descubra o número secreto 🧐");
     exibirTexto("p", "Digite um número de 1 a 100:");
 }
 
@@ -38,11 +38,12 @@ function verificarChute(){
     console.log("O botão 'chute' foi clicado!!!");
 
     if(chute == numeroSecreto){
-        exibirTexto("h1", "Parabéns, você descobriu o número secreto!");
+        exibirTexto("h1", "Parabéns, você ganhou!! 🥳");
         let palavraTentativa = tentativas == 1 ? "tentativa" : "tentativas";
         let msgTentativa = (`Você descobriu o número (${numeroSecreto}) com ${tentativas} ${palavraTentativa}!`);
         exibirTexto('p', msgTentativa);
         document.getElementById("reiniciar").removeAttribute("disabled");
+        document.getElementsByClassName("container__imagem-pessoa")[0].src="/img/ronaldinhorindo.jpg";
     }
     else if(chute > numeroSecreto){
         exibirTexto('p', `O número secreto é menor que ${chute}`);
