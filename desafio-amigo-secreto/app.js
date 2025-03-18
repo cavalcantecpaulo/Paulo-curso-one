@@ -20,6 +20,7 @@ let listaAmigos = [];
     listaAmigos.push(amigo);
     atualizarLista();
     limparInput();
+    somCadaNome();
     }
     function atualizarLista() {
     let array;
@@ -46,11 +47,14 @@ let listaAmigos = [];
     function mostrarResultado(amigoSorteado){
         let sorteado;
         sorteado = document.getElementById("resultado");
-        sorteado.innerHTML = "";
+        sorteado.innerHTML = "Sorteando...";
+
         let elementoSorteado = document.createElement("li");
-        elementoSorteado.textContent = `O amigo secreto sorteado foi: ${amigoSorteado}`;
+        elementoSorteado.textContent = `O sorteado foi: ${amigoSorteado}`;
         sorteado.appendChild(elementoSorteado);
+
         document.getElementsByClassName("didicofoto")[0].src="/assets/didicorindo.jpg";
+        somPosSorteado();
     }
     function limparInput() {
     let amigo;
@@ -59,5 +63,16 @@ let listaAmigos = [];
     }
     function novoJogo(){
         location.reload();
+    }
+    function somPosSorteado(){
+        const audio = document.getElementById("posSorteio");
+        audio.play();
+    }
+    function somCadaNome(){
+        const audios = document.getElementsByClassName("audios-enquanto-digita");
+        const indiceAleatorio = Math.floor(Math.random() * audios.length);
+        const audioEscolhido = audios[indiceAleatorio];
+
+        audioEscolhido.play();
     }
     

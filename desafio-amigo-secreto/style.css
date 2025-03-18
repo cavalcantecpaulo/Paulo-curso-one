@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
     --color-primary: #142d4c;
@@ -30,6 +31,7 @@ body {
     flex-direction: column;
     height: 110%;
     width: 100%;
+    padding: 1%;
 }
 
 /* Banner */
@@ -42,6 +44,7 @@ body {
 }
 .didicofoto{
     width: 20%;
+    margin-top: 2%;
     margin-left: 10%;
 }
 /* Seção de entrada */
@@ -66,7 +69,7 @@ body {
 }
 
 .section-title {
-    font-family: "segoe ui", serif;
+    font-family: "Raleway";
     font-size: 46px;
     font-weight: 700;
     color: var(--color-text);
@@ -111,7 +114,7 @@ body {
 /* Estilos de botão */
 button {
     padding: 15px 30px;
-    font-family: "Inter", sans-serif;
+    font-family: "Raleway";
     font-size: 16px;
     border: 2px solid #000;
     border-radius: 25px;
@@ -154,6 +157,7 @@ ul {
     padding: 15px 30px ;
     color: var(--color-white);
     background-color: var(--color-button);
+    border-radius: 24px;
     font-size: 22px;
     font-weight: 500;
     padding: 4%;
@@ -165,18 +169,41 @@ ul {
 
 .button-draw:hover {
     background-color: var(--color-button-hover);
-    height: 100%;
-    width: 100%;
+    width: 210px;
+    height: 90px;
+    font-size: 24px;
 }
 .rodape{
+    display: flex;
+    flex-direction: column;
     color: #FFFFFF;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family:'Raleway';
     font-size: 20px;
-    font-weight: 200;
+    font-weight:450;
     text-align: center;
+    align-items: center;
     width: 100%;
-    padding: 1%;
+    margin-top: 1%;
 }
+
+.link-destaque{
+    display: flex;
+    color: #05DF05;
+    border: 1px solid;
+    border-radius: 16px;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    padding: 5px 10px;
+    margin: 5% 10% auto;
+    width: 80%;
+}
+.link-destaque:hover{
+    width:300px;
+    font-size: 24px;
+    background-color: #00204a;
+}
+
 @media (max-width:1200px) {
     * {
         flex-direction: column;
@@ -191,6 +218,7 @@ ul {
     }
     .main-title{
         font-size: 60px;
+        margin-top: 10%;
     }
     .button-container{
         align-items: center;
@@ -199,7 +227,10 @@ ul {
         font-size: 18px;
         width: 95%;
         flex-direction: row;
+        justify-content: center;
+        padding: 8%;
         gap: 15px;
+        margin: 0 5px 0;
     }
     .input-wrapper{
         flex-direction: row;
@@ -207,5 +238,11 @@ ul {
     }
     ul{
         font-size: 20px;
+    }
+    .rodape{
+        margin-top: 8%;
+    }
+    .link-destaque{
+        margin-bottom: 5%;
     }
 } 
