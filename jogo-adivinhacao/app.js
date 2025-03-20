@@ -4,7 +4,8 @@ let numElementos = 100;
 let numeroSecreto = gerarNumero();
 let tentativas = 1;
 let numeroMinimo = 1;
-let numeroMaximo = 100;
+let numeroMaximo;
+let dificuldade;
 
 if (qtdElementosLista == numElementos) {
   listaDeNumerosAleatorios = [];
@@ -17,18 +18,36 @@ function exibirTexto(tag, texto) {
 
 function telaInicial() {
   numeroMinimo = 1;
-  numeroMaximo = 100;
-  exibirTexto("h1", "Descubra o número secreto 🧐");
+  numeroMaximo = numElementos;
+  exibirTexto("#primeiro-texto", "Jogo da adivinhação");
+  exibirTexto("h1", "Jogo da adivinhação");
   exibirTexto(
     "#instrucao",
     `Digite um número de ${numeroMinimo} a ${numeroMaximo}:`
   );
   exibirTexto("#dica", "");
+  exibirTexto("#texto-nivel", "Escolha o nível e tente adivinhar!");
 
   document.getElementsByClassName("container__imagem-pessoa")[0].src =
     "/img/ronaldinho.webp";
 }
-
+function dificuldadeJogo(dificuldade) {
+   switch (dificuldade){
+    case "facil":
+      numElementos = 10;
+      break;
+    case "medio":
+      numElementos = 100;
+      break;
+    case "dificil":
+      numElementos = 500;
+      break;
+   case"supremo":
+      numElementos = 1000;
+      break;
+   }
+   novoJogo();
+}
 function gerarNumero() {
   let numeroEscolhido = parseInt(Math.random() * numElementos + 1);
   if (listaDeNumerosAleatorios.includes(numeroEscolhido)) {
@@ -55,6 +74,7 @@ function verificarChute() {
     let palavraTentativa = tentativas == 1 ? "tentativa" : "tentativas";
     let msgTentativa = `Você descobriu o número (${numeroSecreto}) com ${tentativas} ${palavraTentativa}!`;
     exibirTexto("#dica", msgTentativa);
+    exibirTexto("#instrucao", ""); //funcao nao esta funcionando
     document.getElementById("reiniciar").removeAttribute("disabled");
     document.getElementsByClassName("container__imagem-pessoa")[0].src =
       "/img/ronaldinhorindo.jpg";
