@@ -148,6 +148,7 @@ button:disabled {
         align-items: center;
         display: flex;
 }
+    
     .container__conteudo {
         display: block;
         text-align: center;

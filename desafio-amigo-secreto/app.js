@@ -43,6 +43,7 @@ let listaAmigos = [];
     else{
         alert("Não há ninguém para ser sorteado!");
     }
+    
 }
     function mostrarResultado(amigoSorteado){
         let sorteado;
