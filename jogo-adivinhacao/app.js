@@ -27,7 +27,7 @@ function telaInicial() {
   );
   exibirTexto("#dica", "");
   exibirTexto("#texto-nivel", "Escolha o nível e tente adivinhar!");
-
+  
   document.getElementsByClassName("container__imagem-pessoa")[0].src =
     "/img/ronaldinho.webp";
 }
@@ -74,7 +74,8 @@ function verificarChute() {
     let palavraTentativa = tentativas == 1 ? "tentativa" : "tentativas";
     let msgTentativa = `Você descobriu o número (${numeroSecreto}) com ${tentativas} ${palavraTentativa}!`;
     exibirTexto("#dica", msgTentativa);
-    exibirTexto("#instrucao", ""); //funcao nao esta funcionando
+    document.querySelector("#instrucao").style.display = "none";
+
     document.getElementById("reiniciar").removeAttribute("disabled");
     document.getElementsByClassName("container__imagem-pessoa")[0].src =
       "/img/ronaldinhorindo.jpg";
@@ -101,5 +102,6 @@ function novoJogo() {
   limparInput();
   telaInicial();
   document.getElementById("reiniciar").setAttribute("disabled", true);
+  document.querySelector("#instrucao").style.display = "block";
 }
 telaInicial();

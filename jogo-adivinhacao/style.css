@@ -99,7 +99,7 @@ body::before {
     gap: 1em;
 }
 
-h1, .primeiro-texto {
+h1{
     font-family: 'Chakra Petch';
     font-size: 72px;
     padding-bottom: 2rem;
