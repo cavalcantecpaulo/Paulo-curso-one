@@ -13,6 +13,7 @@
     --cor-quinta:#ffffff;
     --cor-sextiaria:#fcff82;
     --cor-hover:#455d7a;
+    --cor-setima:#06D001;
     --fonte-principal:"Poppins";
     --fonte-secundaria:"Afacad Flux";
 }
@@ -47,6 +48,12 @@ body{
     flex-direction: column;
     gap: 40px;
 }
+.conteudo-contato{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: end;
+}
 .conteudo-texto-inicio{
     width: 50%;
     display: flex;
@@ -54,10 +61,18 @@ body{
     gap: 35px;
 }
 .conteudo-texto-projeto{
+    font-family: var(--fonte-secundaria);
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 40px;
+}
+.conteudo-texto-contato{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin:5% 15%
 }
 .conteudo-texto-titulo{
     font-family: var(--fonte-principal);
@@ -73,6 +88,12 @@ body{
     font-size: 2.62rem;
     color: var(--cor-azul-claro);
     margin: 5% 0 1% 0;
+}
+.conteudo-texto-titulo-contato{
+    display: flex;
+    font-family: var(--fonte-principal);
+    font-size: 2.62rem;
+    color: var(--cor-primaria);
 }
 .titulo-destaque{
     color: var(--cor-primaria);
@@ -95,6 +116,51 @@ body{
     padding :0 0 1% 0px;
     text-align: center;
 }
+.conteudo-texto-paragrafo-contato{
+    font-family: var(--fonte-secundaria);
+    font-size: 1.625rem;
+    margin: 3% 0 0 0;
+}
+.inputs{
+    display: flex;
+    font-family: var(--fonte-secundaria);
+    margin: 3% 0 0 0;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+input{
+    font-size: 1.2rem;
+    border-radius: 8px;
+    border: 1px solid;
+    padding: 5px 0;
+    margin: 1% 0 1% 0;
+    width: 77%;
+}
+
+ textarea{
+    font-size: 1.6rem;
+    border-radius: 8px;
+    border: 1px solid;
+    width: 100%;
+    margin: 0 2%;
+ }
+ .mensagem{
+    display: flex;
+    justify-content: space-between;
+    max-height: 25%;
+    margin: 1% 0 0 0;
+ }
+
+ .submit{
+    background-color: var(--cor-setima);
+    border: 1px solid var(--cor-setima);
+    font-family: var(--fonte-primaria);
+    width: 9rem;
+    font-size: 1.8rem;
+    margin: 2% 0 0 0;
+    border-radius: 8px;
+ }
 .minhafoto{
     width: 30%;
     border-radius: 16px;
@@ -190,13 +256,16 @@ body{
         margin:3% 5%;
     }
     .cabecalho{
-        padding:10%;
+        padding:10% 0 10% 0;
     }
     .cabecalho-menu{
         justify-content: center;
         gap: 15%;
     }
     .conteudo-texto{
+        width: 85%;
+    }
+    .conteudo-texto-contato{
         width: 85%;
     }
     .titulos-abas{
