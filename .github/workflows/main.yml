@@ -3,34 +3,28 @@ name: Deploy GitHub Pages
 on:
   push:
     branches:
-      - main  # Roda quando algo muda na main
+      - main  # Roda quando há mudanças na branch main
+
+permissions:
+  contents: write  # Permissão para alterar a branch gh-pages
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout do código
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4  # Atualizando para a versão mais recente
 
       - name: Configurar GitHub Pages
-        uses: actions/configure-pages@v3
+        uses: actions/configure-pages@v4  # Atualizando para versão mais nova
 
-      - name: Criar branch gh-pages com a pasta correta
+      - name: Copiar os arquivos para publicação
         run: |
-          git worktree add gh-pages
-          rm -rf gh-pages/*
-          cp -r ProjetoMinhaPaginaWeb/* gh-pages/
-          cd gh-pages
-          git init
-          git checkout --orphan gh-pages
-          git add .
-          git commit -m "Deploy automático"
-          git push --force origin gh-pages
+          mkdir public
+          cp -r ProjetoMinhaPaginaWeb/* public/
 
-      - name: Publicar no GitHub Pages
-        uses: actions/upload-pages-artifact@v2
+      - name: Fazer deploy para a branch gh-pages
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          path: './ProjetoMinhaPaginaWeb'
-
-      - name: Deploy GitHub Pages
-        uses: actions/deploy-pages@v2
+          branch: gh-pages  # Branch onde o GitHub Pages buscará os arquivos
+          folder: public  # Pasta que será enviada para gh-pages
