@@ -1,0 +1,36 @@
+name: Deploy GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # Roda quando algo muda na main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v3
+
+      - name: Configurar GitHub Pages
+        uses: actions/configure-pages@v3
+
+      - name: Criar branch gh-pages com a pasta correta
+        run: |
+          git worktree add gh-pages
+          rm -rf gh-pages/*
+          cp -r ProjetoMinhaPaginaWeb/* gh-pages/
+          cd gh-pages
+          git init
+          git checkout --orphan gh-pages
+          git add .
+          git commit -m "Deploy automático"
+          git push --force origin gh-pages
+
+      - name: Publicar no GitHub Pages
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: './ProjetoMinhaPaginaWeb'
+
+      - name: Deploy GitHub Pages
+        uses: actions/deploy-pages@v2
