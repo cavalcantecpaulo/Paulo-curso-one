@@ -6,14 +6,14 @@
     padding: 0;
 }
 :root {
-    --cor-escura-fundo:#121212   ;
-    --cor-primaria:#ffff33;
-    --cor-terciaria:#ff5722;
+    --cor-escura-fundo:#011627;
+    --cor-primaria:#FFEB3B;
+    --cor-terciaria: #25D366;
     --cor-azul-claro:#0fc9e7;
     --cor-quinta:#ffffff;
     --cor-sextiaria:#fcff82;
     --cor-hover:#455d7a;
-    --cor-setima:#06D001;
+    --cor-setima:#3498db;
     --fonte-principal:"Poppins";
     --fonte-secundaria:"Afacad Flux";
 }
@@ -32,7 +32,7 @@ body{
 }
 .cabecalho-links{
     color: var(--cor-primaria);
-    text-decoration: none;
+    text-decoration:none;
     font-family: var(--fonte-principal);
 }
 .conteudo{
@@ -43,10 +43,9 @@ body{
     gap:82px;
 }
 .conteudo-texto{
-    width: 60%;
     display: flex;
+    width: 60%;
     flex-direction: column;
-    gap: 40px;
 }
 .conteudo-contato{
     display: flex;
@@ -101,6 +100,7 @@ body{
 .conteudo-texto-paragrafo{
     font-family: var(--fonte-secundaria);
     font-size: 1.625rem;
+    margin: 5% 0 0 0;
 }
 .conteudo-texto-paragrafo-inicio{
     display: flex;
@@ -229,13 +229,15 @@ input{
     color:var(--cor-terciaria);
     font-family: var(--fonte-principal);
     font-size: 1.75rem ;
+    margin: 4% 0 0 0;
   }
   .lista-exibicao{
     font-family: var(--fonte-principal);
     font-size: 1.25rem;
+    margin: 2% 0 0 0;
   }
   .curriculo-destaque{
-    color: var(--cor-sextiaria);
+    color: var(--cor-setima);
   }
   .nome-destacado{
     font-weight: 700;
@@ -251,30 +253,60 @@ input{
     margin-top: 8%;
   }
   @media(max-width:1200px){
+
     .conteudo{
         flex-direction:column-reverse;
-        margin:3% 5%;
+        margin:2% 2% 0 2%;
+        font-size: 2rem;
     }
     .cabecalho{
         padding:10% 0 10% 0;
+        font-size: 1.3rem;
     }
     .cabecalho-menu{
         justify-content: center;
-        gap: 15%;
+        gap: 1.2rem;
     }
     .conteudo-texto{
         width: 85%;
     }
     .conteudo-texto-contato{
-        width: 85%;
+        width: 95%;
+    }
+    .conteudo-texto-titulo-inicio{
+    font-size: 2rem;
+    }
+    .conteudo-texto-paragrafo-inicio{
+        font-size: 1.3rem;
+        padding: 0 2% 5% 2%;
+    }
+    .conteudo-texto-titulo-projetos{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .conteudo-texto-paragrafo-projetos{
+        font-size: 1.3rem;
+        text-align: center;
+
     }
     .titulos-abas{
         text-align: center;
+        margin: 10% 0 0 0;
+        font-size: 1.5rem;
+    }
+    .lista-exibicao{
+        margin: 5% 0 0 0;
+        font-size: 1.3rem;
+    }
+    .conteudo-texto-paragrafo{
+        font-size: 1.3rem;
     }
     .minhafoto{
+        margin:10% 0 0 0;
         width: 70%;
     }
     .rodape{
         margin-top: 15%;
+        font-size: 1.2rem;
     }
   }
