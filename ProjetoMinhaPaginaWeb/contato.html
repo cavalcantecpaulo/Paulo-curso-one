@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho-menu">
+            <a class="cabecalho-links" href="index.html">Inicio</a>
+            <a class="cabecalho-links" href="sobremim.html">Sobre Mim</a>
+            <a class="cabecalho-links" href="projetos.html">Projetos</a>
+            <a class="cabecalho-links" href="contato.html">Contato</a>
+        </nav>
+    </header>
+    <main class="conteudo-contato">
+        <section class="conteudo-texto-contato">
+            <h1 class="conteudo-texto-titulo-contato">Envie sua mensagem!</strong></h1>
+            <p class="conteudo-texto-paragrafo-contato">Se preferir pode entrar em contato comigo diretamente no e-mail pelo formulário:
+                </p>
+        <div class="inputs">
+            <form action="mailto:pauloc1807@hotmail.com" method="POST" enctype="multipart/form-data">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="assunto">Assunto:</label>
+                <input type="text" id="assunto" name="assunto" required>
+                <br>
+                <div class="mensagem">
+                    <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" required></textarea>
+                <br>
+                </div>
+                <button class="submit" type="submit">Enviar</button>
+                
+              </form>
+        </div>
+        
+
+    </main>
+    <footer class="rodape">
+        <p class="nome-destacado">Desenvolvido por Paulo Cavalcante</p>
+        <p>2025 - Todos os direitos reservados</p>   
+    </footer>
+</body>
+</html>

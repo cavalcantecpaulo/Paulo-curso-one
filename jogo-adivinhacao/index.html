@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.responsivevoice.org/responsivevoice.js?key=nQISVl50"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Jogo adivinhação JS</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container__conteudo">
+            <div class="container__informacoes">
+                
+                <div class="container__texto">
+                    <h1 id="primeiro-texto"></h1>
+                    <h1 id= "ganhou"></h1>
+                    <div class="botoes">
+                        <p class="texto__paragrafo" id="texto-nivel"></p>
+                            <button class="dificuldade" onclick="dificuldadeJogo('facil')">Fácil</button>
+                            <button class="dificuldade" onclick="dificuldadeJogo('medio')">Médio</button>
+                            <button class="dificuldade" onclick="dificuldadeJogo('dificil')">Difícil</button>
+                            <button class="dificuldade" onclick="dificuldadeJogo('supremo')">Supremo</button>
+                        </div>
+                    <p class="texto__paragrafo" id="dica"></p>
+                    <p class="texto__paragrafo" id="instrucao"></p>  
+                </div>
+                <input type="number" min="1" max="100" class="container__input">
+                <div class="chute container__botoes">
+                    <button onclick="verificarChute()" class="container__botao">Chute</button>
+                    <button onclick="novoJogo()" id="reiniciar" class="container__botao" disabled>Novo jogo</button>
+                </div>
+            </div>
+            <img src="./img/ronaldinho.webp" alt="Ronaldinho pensativo" class="container__imagem-pessoa" />
+        </div>
+    </div>
+    <script src="app.js" defer></script>
+    <footer class="rodape">
+        <p>2025 - Modified by Cavalcante</p>
+    </footer>
+</body>
+</html>
