@@ -40,15 +40,35 @@ Este projeto é um jogo de adivinhação onde o usuário tenta adivinhar um núm
 - Contador de tentativas.
 - Mensagem de vitória quando o número é adivinhado corretamente.
 
+### 📮 Buscador de CEP em Java
+
+Este projeto é uma aplicação Java que permite ao usuário consultar informações de endereço com base em um CEP fornecido. Utiliza a API ViaCEP para obter dados como logradouro, bairro, cidade e estado. O programa faz requisições HTTP, processa as respostas JSON e exibe as informações de forma clara ao usuário.
+
+**Funcionalidades:**
+
+- Entrada de CEP pelo usuário
+- Validação do formato do CEP
+- Requisição à API ViaCEP
+- Exibição dos dados de endereço correspondentes
+
 ## 🛠️ Tecnologias Utilizadas
 
-- **HTML**: Estruturação do conteúdo da página.
-- **CSS**: Estilização da página, incluindo flexbox para layout e media queries para responsividade.
-- **JavaScript**: Lógica de programação e interatividade.
-- **Google Fonts**: Utilização das fontes "Poppins" e "Afacad Flux".
-- **Vercel**: Hospedagem e deploy da aplicação.
-- **Git**: Ferramenta de versionamento do código-fonte.
-- **GitHub**: Hospedagem do repositório.
+#### 🌐 Front-End
+- **HTML**: Estruturação das páginas.
+- **CSS**: Estilização visual com Flexbox e responsividade com media queries.
+- **JavaScript**: Lógica e interatividade nos projetos web.
+- **Google Fonts**: Fontes personalizadas como *Poppins* e *Afacad Flux*.
+- **Vercel**: Hospedagem e deploy das aplicações web.
+
+#### ☕ Back-End
+- **Java (Java 11+)**: Utilizado para projetos de linha de comando.
+- **Gson**: Biblioteca Java usada para manipulação de JSON.
+- **API ViaCEP**: API para consulta de endereço via CEP.
+
+#### 🧰 Ferramentas
+- **Git**: Controle de versão do código-fonte.
+- **GitHub**: Hospedagem dos repositórios e colaboração.
+- **Postman**: Ferramenta para teste e desenvolvimento de APIs.
 
 ## 🎓 Formação ONE (Oracle Next Education)
 
@@ -61,6 +81,10 @@ A Formação ONE é uma parceria entre a Oracle e a Alura para oferecer uma educ
 - Programação em JavaScript para lógica de programação e interatividade.
 - Utilização de ferramentas de versionamento como Git e GitHub.
 - Deploy de aplicações web com Vercel.
+- Consumo de APIs para obtenção de dados externos.
+- Manipulação e desserialização de JSON utilizando a biblioteca Gson em Java.
+- Desenvolvimento de aplicações Java para terminal com integração de APIs.
+- Implementação de lógica de negócios para conversão de moedas e consulta de endereços via CEP.
 - Melhores práticas de desenvolvimento e colaboração em projetos.
 
 ## 📞 Contato
